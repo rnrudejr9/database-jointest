@@ -26,9 +26,6 @@ public class BookService {
 
 
     public void pushData(){
-        Book book = new Book(1L,"hello",new Author(1L,"helloauthor"),1L);
-        Author author = new Author(2L,"helloffff");
-        bookRepository.save(book);
     }
 
     public Book printData(Long id){

@@ -17,9 +17,8 @@ public class Book {
     @Column
     private String name;
 
+    private Long publisherid;
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
-
-    private Long publisherid;
 }
