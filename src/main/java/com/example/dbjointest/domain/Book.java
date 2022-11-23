@@ -16,6 +16,10 @@ public class Book {
     private Long id;
     @Column
     private String name;
-    private Long authorid;
+
+    @ManyToOne
+    @JoinColumn(name = "author_id")
+    private Author author;
+
     private Long publisherid;
 }
